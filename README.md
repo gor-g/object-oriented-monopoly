@@ -2,7 +2,7 @@
 
 The goal of this project was to implement a monopoly game using OOP best practices. 
 
-An ergonomic GUI wasn't in the requirements of this project, so there is only a very basic terminal interface with some basic coloration, implemented for testing purposes.
+An ergonomic GUI wasn't in the requirements of this project, so there is only a very basic terminal interface with some basic coloration, implemented for testing purposes. (While the code is written in English, the interface is in French)
 
 Ther are no Chance and Community Chest cards, and there is no jail. 
 
