@@ -4,13 +4,12 @@ from typing import List, Dict
 from gui import user_interface as ui
 from copy import copy
 
-#TODO :  patterne observeur observable entre utilisateur et rue possedés
-
+t_GoTile = "GoTile"
 
 
 class Monopoly():
-  def __init__(self, goTile, colors:List[Color]):
-    self._goTile:GoTile = goTile
+  def __init__(self, goTile: t_GoTile, colors:List[Color]):
+    self._goTile:t_GoTile = goTile
     self.__colors:List[Color] = colors
     self.__players:List[Player] = {Player(name, self) for name in ui.getPlayers()}
 
