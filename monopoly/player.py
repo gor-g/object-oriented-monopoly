@@ -18,7 +18,7 @@ class Player:
 
   def __init__(self, name:str, monopoly:t_Monopoly ):
     self._name = name
-    self.__balance:int = 10033
+    self.__balance:int = 333
     self.__monopoly:t_Monopoly = monopoly
     self.__tile:t_Tile = monopoly._goTile
     self.__number_of_train_stations:int = 0
@@ -99,7 +99,7 @@ class Player:
     return cls.__dice1.roll() + cls.__dice2.roll()
 
   def play(self):
-    steps = 1#self.rollDices()
+    steps = self.rollDices()
     ui.message(f"\n\n {str(self)} a joué. \nVotre solde est de {self.__balance}€ \nLes dés ont donné {steps}. ")
     self.__tile = self.__tile.nStepsForward(steps, self)
     self.__tile.playerLanded(self)
