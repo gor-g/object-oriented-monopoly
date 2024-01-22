@@ -7,3 +7,10 @@ An ergonomic GUI wasn't in the requirements of this project, so there is only a 
 Ther are no Chance and Community Chest cards, and there is no jail. 
 
 The main focus of the project were the street tiles. The street tiles are implementing the state pattern. With the color class, the street tiles also implement the observer pattern. 
+
+
+To test the game run 
+
+```bash
+python3 monopoly/main.py
+```
